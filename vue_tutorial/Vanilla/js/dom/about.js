@@ -1,0 +1,3 @@
+bindToApp(fullHeader())
+bindToApp(fullFooter())
+
