@@ -7,7 +7,6 @@ function link(href, inner){
     return el
 }
 
-
 function header(){
     let el = document.createElement("div");
     headerStyle(el)
@@ -47,29 +46,37 @@ function input(txt){
 
 function fullForm(){
     let formEl = form()
-    formEl.appendChild(input("First Name"))
-    formEl.appendChild(input("Last Name"))
-    formEl.appendChild(button("Add Employee"))
+    formEl.appendChild(input("Email"))
+    formEl.appendChild(button("Start"))
     return formEl
 }
 
 function fullHeader(){
     let el = header()
-    el.appendChild(block("About"))
-    el.appendChild(block("Contact"))
-    el.appendChild(block("Pricing"))
-    el.appendChild(block("Details"))
+    el.appendChild(block("Logo"))
+    el.appendChild(block("Login"))
     return el
 }
 
 function fullFooter(){
     let el = header()
+    el.appendChild(block(
+        "5640 Beacon st." + 
+        "Pittsburgh PA 15217" +
+        "602-710-5010" 
+    ))
     return el
 } 
 
 function fullBody(){
     let bodyEl = body()
-    bodyEl.appendChild(video("../assets/Forest_15_3b_Videvo.mov"))
+    bodyEl.appendChild(video("../assets/180825_13_garden.mp4"))
+    bodyEl.appendChild(block(
+        "The Employee Development Platform" +
+        "Get (gain) the best from your employees." +
+        "Hire them, Train Them, Reap the benefits." +
+        "Track progress easily"
+    ))
     bodyEl.appendChild(fullForm())
     return bodyEl
 }

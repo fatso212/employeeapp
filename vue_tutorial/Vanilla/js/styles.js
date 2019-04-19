@@ -12,15 +12,33 @@ function blockStyle(el){
     el.style.textDecoration = "none"
 }
 
+function inlineBlock(el){
+    el.style.display = "inline-block"
+}
+
 function linkStyle(el){
     el.style.textDecoration = "none"
     el.style.color = "white"
 }
 
+function bannerTextStyle1(el){
+    el.style.lineHeight = 1.5 + "em"
+    el.style.fontWeight = 100
+    el.style.width = "50%"
+    el.style.position = "relative"
+    el.style.top = "30%"
+    el.style.fontSize = "2em"
+    el.style.fontFamily = "verdana"
+}
 
 function headerStyle(el){
     el.style.width = "100%"
     el.style.height = "10%"
+}
+
+function fixed(el){
+    el.style.position = "fixed"
+    el.style.top = "0"
 }
 
 
@@ -43,7 +61,7 @@ function labelStyle(el){
     el.style.width = "40%"
     el.style.height = "10%"
     el.style.margin = "auto"
-    el.style.display = "block"
+    el.style.display = "inline"
     el.style.marginTop = "1%"
     el.style.padding = "1%"
     el.style.color = "white"
@@ -57,7 +75,7 @@ function inputStyle(el){
     el.style.width = "40%"
     el.style.height = "10%"
     el.style.margin = "auto"
-    el.style.display = "block"
+    el.style.display = "inline"
     el.style.marginTop = "1%"
     el.style.padding = "1%"
     el.style.color = "black"
@@ -79,7 +97,7 @@ function buttonStyle(el){
     el.style.width = "10%"
     el.style.height = "10%"
     el.style.margin = "auto"
-    el.style.display = "block"
+    el.style.display = "inline"
     el.style.marginTop = "1%"
     el.style.padding = "1%"
     el.style.color = "black"
